@@ -17,7 +17,7 @@ inquirer.prompt([{
 }
 ])
     .then(async function (response) {
-        var queryUrl = `https://api.github.com/users/kyleHaldane`;
+        var queryUrl = "https://api.github.com/users/+"response.username;
 
         await axios.get(queryUrl)
 
